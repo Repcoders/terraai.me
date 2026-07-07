@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra — ForgeAI & ForgeIDE</title>
+  <meta name="description" content="Terra builds ForgeAI and ForgeIDE — tools for people who ship code." />
+
+  <link rel="icon" href="assets/images/terra-logo.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Ambient background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <img src="assets/images/terra-logo.png" alt="Terra" class="nav-logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#products">Products</a>
+        <a href="#forgeai">ForgeAI</a>
+        <a href="#forgeide">ForgeIDE</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://discord.gg/invite/UP5Njtc53z" class="btn btn-ghost nav-cta" target="_blank" rel="noopener">
+        <span class="prompt">&gt;_</span> Join our Discord
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="prompt">&gt;_</span> terra --init</p>
+      <h1 class="hero-title">
+        Two products.<br />
+        <em>One forge.</em>
+      </h1>
+      <p class="hero-sub">
+        Terra builds the tools that sit closest to the people who ship code —
+        starting with an AI that thinks alongside you, and an editor built to hold it.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Explore the forge</a>
+        <a href="https://discord.gg/invite/UP5Njtc53z" class="btn btn-outline" target="_blank" rel="noopener">Join our Discord</a>
+      </div>
+    </div>
+
+    <div class="hero-terminal" role="img" aria-label="Terminal animation showing Terra's tools initializing">
+      <div class="terminal-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="terminal-title">terra.me</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="t-prompt">$</span> <span class="t-type" id="typeline"></span><span class="cursor">_</span></p>
+        <p class="t-out">→ loading <span class="t-accent">forgeai</span> ... ready</p>
+        <p class="t-out">→ loading <span class="t-accent">forgeide</span> ... <span class="t-dim">building</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS OVERVIEW ============ -->
+  <section class="products" id="products">
+    <p class="eyebrow center"><span class="prompt">&gt;_</span> ls ./products</p>
+    <h2 class="section-title center">What we're forging</h2>
+
+    <div class="product-grid">
+      <a href="#forgeai" class="product-card">
+        <div class="product-card-top">
+          <span class="status-dot live"></span>
+          <span class="status-label">Live</span>
+        </div>
+        <h3>ForgeAI</h3>
+        <p>A conversation-first AI workspace for people building software — model switching, voice, and memory, without the clutter.</p>
+        <span class="card-link">See ForgeAI &rarr;</span>
+      </a>
+
+      <a href="#forgeide" class="product-card product-card-dev">
+        <div class="product-card-top">
+          <span class="status-dot dev"></span>
+          <span class="status-label">In development</span>
+        </div>
+        <h3>ForgeIDE</h3>
+        <p>The editor built around ForgeAI from the ground up — not an AI bolted onto an old IDE, but one designed for it.</p>
+        <span class="card-link">Learn more &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FORGEAI DETAIL ============ -->
+  <section class="showcase" id="forgeai">
+    <div class="showcase-copy">
+      <p class="eyebrow"><span class="prompt">&gt;_</span> product/01</p>
+      <h2 class="section-title">ForgeAI</h2>
+      <p class="showcase-lede">
+        Open a blank prompt and get to work. ForgeAI drops the dashboard, the widgets,
+        and the noise — leaving a single, quiet space to think, ask, and build.
+      </p>
+
+      <ul class="feature-list">
+        <li><span class="prompt">&gt;_</span> Switch models mid-conversation without losing context</li>
+        <li><span class="prompt">&gt;_</span> Voice input and playback, built in, not bolted on</li>
+        <li><span class="prompt">&gt;_</span> Quick-start modes for writing, learning, code, and everyday tasks</li>
+        <li><span class="prompt">&gt;_</span> A dark, distraction-free canvas that gets out of your way</li>
+      </ul>
+
+      <a href="https://discord.gg/invite/UP5Njtc53z" class="btn btn-primary" target="_blank" rel="noopener">Get early access</a>
+    </div>
+
+    <div class="showcase-media">
+      <div class="browser-frame">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">forgeai</span>
+        </div>
+        <img src="assets/images/forgeai-screenshot.png" alt="ForgeAI interface showing a dark chat workspace" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORGEIDE DETAIL ============ -->
+  <section class="showcase reverse" id="forgeide">
+    <div class="showcase-copy">
+      <p class="eyebrow"><span class="prompt">&gt;_</span> product/02</p>
+      <h2 class="section-title">ForgeIDE</h2>
+      <span class="badge-dev">Currently under development</span>
+      <p class="showcase-lede">
+        We're building the editor that ForgeAI deserves — one where the model isn't
+        a sidebar plugin, but part of how the whole environment is designed.
+        Details are still being forged. Follow the repo for updates.
+      </p>
+      <a href="https://discord.gg/invite/UP5Njtc53z" class="btn btn-outline" target="_blank" rel="noopener">Watch on Discord</a>
+    </div>
+
+    <div class="showcase-media">
+      <div class="dev-panel">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">forgeide — build</span>
+        </div>
+        <div class="dev-panel-body">
+          <p class="t-out">$ forge build --target ide</p>
+          <p class="t-out t-dim">[####------] compiling core...</p>
+          <p class="t-out t-accent">status: under development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <section class="cta" id="contact">
+    <p class="eyebrow center"><span class="prompt">&gt;_</span> terra --contact</p>
+    <h2 class="section-title center">Build with us</h2>
+    <p class="cta-sub">ForgeAI is live. ForgeIDE is coming. Follow along or reach out.</p>
+    <div class="hero-actions center">
+      <a href="https://discord.gg/invite/UP5Njtc53z" class="btn btn-primary" target="_blank" rel="noopener">
+        <span class="prompt">&gt;_</span> Join our Discord
+      </a>
+      <a href="mailto:contactus@terraai.me" class="btn btn-outline">contactus@terraai.me</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <img src="assets/images/terra-logo.png" alt="Terra" class="footer-logo" />
+      <p>&copy; <span id="year"></span> Terra. ForgeAI &amp; ForgeIDE.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
